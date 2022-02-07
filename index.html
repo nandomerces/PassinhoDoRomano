@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passinho do Romano</title>
+    
+    <link rel="icon" type="image/x-icon" href="ba.mk.caesarcipher.jpg">
+    <link rel="stylesheet" href="styleroman.css">
+    <script src="passinhoscript.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <h1> Passinho do Romano</h1>
+    <h2>Crie e decodifique as suas mensagens!</h2>
+        <form>
+            <textarea id="message" style="width:478px; height:202px;">Coloque seu texto aqui! </textarea> <br>
+            <span>
+            <label for="tipos">Escolha as opções:</label> <br>
+                <select id="tipos" name="tipos">
+                    <option value="base64">Base 64</option> 
+                    <option value="cesar">Cifra de César</option>
+                </select>
+            </span>
+            <span id=proced>
+                <input type="radio" id="code" name="proced" onclick="buttonChange()">
+                <label for="codificar"> Codificar </label>            
+                <input type="radio" id="decod" name="proced" onclick="buttonChange()">
+                <label for="decodificar"> Decodificar </label> <br><br>
+            </span>
+
+            <!--Incremento oculto. Aparecer quando for escolhido Cifra de César -->
+            <div id="incremento">
+            <label for="Incremento">Incremento</label>
+            <input type="number" id="incremente" name="incremento"> </input><br><br>
+            </div>
+
+           
+            </span>
+        </form>
+
+        <button id="button">Vai!</button>
+          
+        <br> <br>
+
+        <strong>RESULTADO--</strong><br>
+        <!--EXIBIÇÃO DO RESULTADO-->
+        <p></p>
+</div>
+</body>
+
+</html>
